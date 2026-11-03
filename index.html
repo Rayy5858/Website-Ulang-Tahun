@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sakura Leaves Background -->
+    <div class="sakura-container" id="sakuraContainer"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Profile Section with Sakura Blossoms -->
+        <div class="profile-section">
+            <div class="sakura-tree-container">
+                <svg class="sakura-tree" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Sakura blossoms only - no trunk -->
+                    <circle cx="70" cy="90" r="12" fill="#FFB7D5" opacity="0.8"/>
+                    <circle cx="130" cy="75" r="14" fill="#FF9EC4" opacity="0.8"/>
+                    <circle cx="75" cy="60" r="10" fill="#FFB7D5" opacity="0.8"/>
+                    <circle cx="125" cy="55" r="11" fill="#FF9EC4" opacity="0.8"/>
+                    <circle cx="100" cy="50" r="15" fill="#FFB7D5" opacity="0.8"/>
+                    <circle cx="85" cy="70" r="9" fill="#FF9EC4" opacity="0.7"/>
+                    <circle cx="115" cy="65" r="10" fill="#FFB7D5" opacity="0.7"/>
+                    
+                    <!-- Petal details -->
+                    <circle cx="65" cy="85" r="4" fill="#FF6B9D" opacity="0.6"/>
+                    <circle cx="75" cy="95" r="3" fill="#FF6B9D" opacity="0.6"/>
+                    <circle cx="125" cy="70" r="4" fill="#FF6B9D" opacity="0.6"/>
+                    <circle cx="135" cy="80" r="3" fill="#FF6B9D" opacity="0.6"/>
+                    <circle cx="95" cy="45" r="5" fill="#FF6B9D" opacity="0.6"/>
+                    <circle cx="105" cy="55" r="4" fill="#FF6B9D" opacity="0.6"/>
+                    
+                    <!-- Additional blossoms -->
+                    <circle cx="90" cy="85" r="8" fill="#FFB7D5" opacity="0.6"/>
+                    <circle cx="110" cy="80" r="9" fill="#FF9EC4" opacity="0.6"/>
+                    <circle cx="80" cy="55" r="7" fill="#FFB7D5" opacity="0.5"/>
+                    <circle cx="120" cy="60" r="8" fill="#FF9EC4" opacity="0.5"/>
+                </svg>
+            </div>
+            <div class="profile-container">
+                <img src="" alt="Profile" id="profileImage" style="display: none;">
+                <div class="profile-placeholder" id="profilePlaceholder"></div>
+            </div>
+        </div>
+
+        <!-- Welcome Text -->
+        <div class="welcome-text">
+            Setiap detik yang berlalu adalah langkah menuju momen yang dinanti 
+        </div>
+
+        <!-- Completion Message -->
+        <div class="completion-message" id="completionMessage">
+            🎉 Waktu telah tiba!
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-wrapper">
+            <div class="flower flower-left">🌸</div>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span class="heart-icon">❤️</span>
+                    <div class="countdown-value-wrapper">
+                        <div class="countdown-value" id="days">0</div>
+                        <div class="countdown-label">Hari</div>
+                    </div>
+                </div>
+                <div class="countdown-item">
+                    <span class="heart-icon">❤️</span>
+                    <div class="countdown-value-wrapper">
+                        <div class="countdown-value" id="hours">0</div>
+                        <div class="countdown-label">Jam</div>
+                    </div>
+                </div>
+                <div class="countdown-item">
+                    <span class="heart-icon">❤️</span>
+                    <div class="countdown-value-wrapper">
+                        <div class="countdown-value" id="minutes">0</div>
+                        <div class="countdown-label">Menit</div>
+                    </div>
+                </div>
+                <div class="countdown-item">
+                    <span class="heart-icon">❤️</span>
+                    <div class="countdown-value-wrapper">
+                        <div class="countdown-value" id="seconds">0</div>
+                        <div class="countdown-label">Detik</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flower flower-right">🌸</div>
+        </div>
+
+        <!-- Link Button -->
+        <div class="link-container">
+            <a href="#" class="link-button locked" id="linkButton">
+                <span class="lock-icon">🔒</span>
+                <span id="buttonText">Tautan terkunci, tunggu waktu habis</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
